@@ -1,0 +1,6 @@
+transformers
+torch
+pandas
+langchain
+gradio
+PyMuPDF
