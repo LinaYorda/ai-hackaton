@@ -1,12 +1,23 @@
 import os
-from chatbot.model import LegalBertChatbot
-from chatbot.utils import get_documents_from_folder
+from chatbot.model import LegalBertChatbot, ChatbotModel
+from chatbot.utils import get_documents_from_folder, load_legal_documents
 import gradio as gr
 
 def ask_question(query):
     context = " ".join(documents)
     response = chatbot.generate_response(query, context)
     return response
+
+def main():
+    documents = load_legal_documents('../data/legal_documents')
+    chatbot = ChatbotModel(documents)
+    
+    while True:
+        query = input("Enter your query: ")
+        if query.lower() in ['exit', 'quit']:
+            break
+        response = chatbot.answer_query(query)
+        print(response)
 
 if __name__ == "__main__":
     # Initialize chatbot
@@ -37,3 +48,5 @@ if __name__ == "__main__":
     
     # Launch interface
     demo.launch(share=True)
+    
+    main()

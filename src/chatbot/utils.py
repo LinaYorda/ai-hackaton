@@ -22,3 +22,12 @@ def get_documents_from_folder(folder_path):
             text = extract_text_from_pdf(file_path)
             documents.append(text)
     return documents
+
+def load_legal_documents(directory):
+    documents = {}
+    for filename in os.listdir(directory):
+        if filename.endswith('.pdf'):
+            filepath = os.path.join(directory, filename)
+            with open(filepath, 'rb') as file:
+                documents[filename] = file.read()
+    return documents
