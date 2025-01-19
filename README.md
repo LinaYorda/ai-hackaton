@@ -35,19 +35,17 @@ This project was developed as part of the AI + Digital Evidence Hackathon.It int
 - Required Python libraries (listed in `requirements.txt`)
 
 
-![Screenshot of Lawbotica](lawbotica.png)
-
 ### Installation
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your-username/lawbotica.git
-   cd lawbotica
-   pip install -r requirements.txt
-   python lawbotica.py
+   git clone https://github.com/your-username/lawbotica.git #clone the repo
+   cd lawbotica # navigate to the folder
+   pip install -r requirements.txt # install requirements.txt
+   python lawbotica.py #run the script
+   ```
 
-
-## How to Use
+### How to Use Jupiter Notebook
 1. **Open the Notebook**:
    Download or clone this repository, then open `legal_assistant_bot.ipynb` in Jupyter Notebook or JupyterLab.
 
@@ -58,6 +56,8 @@ This project was developed as part of the AI + Digital Evidence Hackathon.It int
    - **Step 3**: Ask and answer questions using the Falcon-7B model.
 
 ---
+
+![Screenshot of Lawbotica](lawbotica.png)
 
 ## File Structure
 ```plaintext
@@ -80,4 +80,4 @@ While efforts have been made to ensure accuracy, results may vary.
 
 # Contributing
 
-* 
+We welcome contributions to Lawbotica: Legal Assistant Bot! Whether it's fixing a bug, adding a new feature, or improving documentation, your contributions are highly appreciated.
