@@ -1,0 +1,5 @@
+myenv
+.gradio
+.vscode
+legal_chroma_db.zip
+data/legal_documents

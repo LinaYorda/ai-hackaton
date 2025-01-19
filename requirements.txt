@@ -1,1 +1,10 @@
-unittest
+torch
+markitdown
+langchain
+chromadb
+gradio
+sentence-transformers
+bitsandbytes
+accelerate
+transformers @ git+https://github.com/huggingface/transformers.git
+pandas
