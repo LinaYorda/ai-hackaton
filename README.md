@@ -35,15 +35,24 @@ This project was developed as part of the AI + Digital Evidence Hackathon.It int
 - Required Python libraries (listed in `requirements.txt`)
 
 
-### Installation
+### Installation Python
 
-1. **Clone the Repository**  
+**Clone the repo and install the dependencies**  
    ```bash
    git clone https://github.com/your-username/lawbotica.git #clone the repo
    cd lawbotica # navigate to the folder
    pip install -r requirements.txt # install requirements.txt
    python lawbotica.py #run the script
    ```
+After starting the script, a Gradio app will open locally in your default browser.
+
+If it doesn’t open automatically, look for a URL in the terminal, such as:
+   ```
+   Running on local URL:  http://127.0.0.1:7860
+   ```
+   Open the URL in your browser to access the app.
+
+
 
 ### How to Use Jupiter Notebook
 1. **Open the Notebook**:
