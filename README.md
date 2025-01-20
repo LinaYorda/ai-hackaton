@@ -42,7 +42,7 @@ This project was developed as part of the AI + Digital Evidence Hackathon.It int
    git clone https://github.com/your-username/lawbotica.git #clone the repo
    cd lawbotica # navigate to the folder
    pip install -r requirements.txt # install requirements.txt
-   python lawbotica.py #run the script
+   python3 lawbotica.py #run the script
    ```
 After starting the script, a Gradio app will open locally in your default browser.
 
@@ -82,10 +82,10 @@ legal-assistant-bot/
 
 # Notes and Limitations
 
-* This assistant is designed to help navigate legal documents and provide general insights.
-It is not a substitute for professional legal advice.
+* This assistant is intended for educational purposes and as a proof-of-concept for exploring AI applications in legal document analysis. It is not a substitute for professional legal advice.
 * Responses are generated using an AI model trained on publicly available datasets.
 While efforts have been made to ensure accuracy, results may vary.
+* This application processes input data locally during the session. However, depending on your usage and the Gradio hosting setup, some data may be transmitted to external servers (e.g., for hosting the Gradio app). Do not input sensitive or confidential legal information.
 
 # Contributing
 
